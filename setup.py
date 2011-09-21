@@ -27,7 +27,7 @@ setup(name='plone.app.mediarepository',
       install_requires=[
           'setuptools',
           'plone.app.dexterity',
-          # -*- Extra requirements: -*-
+          'plone.app.contentlisting',
       ],
       extras_require={
           'test': [
