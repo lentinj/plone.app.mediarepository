@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:tal="http://xml.zope.org/namespaces/tal">
+  <head>
+    <!--TODO: Should this stay? -->
+    <link type="text/css" media="screen" rel="stylesheet" href="http://localhost:8080/Plone/public.css" />
+  </head>
+  <body>
+    <div class="imageRepositoryAlbum">
+      <div class="photoAlbumEntry" tal:repeat="item context/media-repository/@@folderListing">
+        <a title="" href="#" tal:attributes="href item/getPath; title item/Title" >
+          <span class="photoAlbumEntryWrapper">
+            <img tal:define="images python:context['media-repository'].restrictedTraverse(item.getId()+'/@@images')"
+                 tal:replace="structure images/image/thumb"/>
+          </span>
+          <span class="photoAlbumEntryTitle" tal:content="item/Title"></span>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
+  

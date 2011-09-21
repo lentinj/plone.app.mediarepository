@@ -1,0 +1,16 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:grok="http://namespaces.zope.org/grok"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
+    i18n_domain="plone.app.mediarepository">
+    
+    <browser:page
+        for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+        name="mediarepo-picker"
+        class=".picker.Picker"
+        template="picker.pt"
+        permission="zope.Public"
+        /><!--TODO: For and permission -->
+
+</configure>
