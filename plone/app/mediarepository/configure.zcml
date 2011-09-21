@@ -25,6 +25,13 @@
       provides="Products.GenericSetup.interfaces.EXTENSION"
       />
 
+  <genericsetup:importStep
+      name="add_repository"
+      title="Add the default media repository"
+      description="Add the default media repository"
+      handler="plone.app.mediarepository.setuphandlers.addMediaRepository"
+      />
+
   <!-- -*- extra stuff goes here -*- -->
 
 </configure>

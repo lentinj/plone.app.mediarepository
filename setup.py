@@ -29,6 +29,10 @@ setup(name='plone.app.mediarepository',
           'plone.app.dexterity',
           # -*- Extra requirements: -*-
       ],
+      extras_require={
+          'test': [
+            'unittest2',
+            'plone.app.testing', ]},
       entry_points="""
       # -*- Entry points: -*-
       [z3c.autoinclude.plugin]
