@@ -4,7 +4,7 @@
     xmlns:grok="http://namespaces.zope.org/grok"
     xmlns:z3c="http://namespaces.zope.org/z3c"
     i18n_domain="plone.app.mediarepository">
-    
+
     <browser:page
         for="Products.CMFPlone.interfaces.IPloneSiteRoot"
         name="mediarepo-picker"
@@ -12,5 +12,14 @@
         template="picker.pt"
         permission="zope.Public"
         /><!--TODO: For and permission -->
+
+    <browser:resourceDirectory
+        name="plone.app.mediarepository.stylesheets"
+        directory="stylesheets"
+        />
+
+    <browser:resourceDirectory
+        name="plone.app.mediarepository.javascripts"
+        directory="javascripts" />
 
 </configure>
