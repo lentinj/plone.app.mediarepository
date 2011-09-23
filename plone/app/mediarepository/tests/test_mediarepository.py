@@ -1,5 +1,7 @@
 import unittest2 as unittest
-from plone.app.mediarepository.testing import MEDIAREPOSITORY_INTEGRATION_TESTING
+from plone.app.mediarepository.testing import \
+    MEDIAREPOSITORY_INTEGRATION_TESTING
+
 
 class MediaRepositoryTest(unittest.TestCase):
 
@@ -10,5 +12,6 @@ class MediaRepositoryTest(unittest.TestCase):
 
     def test_default_repository(self):
         site = self.layer['portal']
-        self.assertTrue(hasattr(site,'media-repository'))
-        self.assertEquals(site['media-repository'].portal_type,'media_repository')
+        self.assertTrue(hasattr(site, 'media-repository'))
+        self.assertEquals(site['media-repository'].portal_type,
+                          'media_repository')
