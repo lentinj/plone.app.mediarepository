@@ -2,6 +2,7 @@ from plone.formwidget.contenttree import UUIDSourceBinder
 
 from zope.app.component.hooks import getSite
 
+
 class MediaRepoSourceBinder(UUIDSourceBinder):
     def __init__(self):
         # Ideally would set navigation tree query at this point, but don't seem
