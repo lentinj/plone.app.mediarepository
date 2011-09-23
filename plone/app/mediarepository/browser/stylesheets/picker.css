@@ -1,3 +1,7 @@
+.mediaRepository {
+    overflow: hidden;
+}
+
 .mediaRepository .selected {
     border: 1px solid #387FBE;
 }
