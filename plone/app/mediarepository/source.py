@@ -7,7 +7,7 @@ class MediaRepoSourceBinder(UUIDSourceBinder):
         # Ideally would set navigation tree query at this point, but don't seem
         # to be able to get a site. Wait until call
         super(MediaRepoSourceBinder, self).__init__()
-    
+
     def __call__(self, context):
         site = getSite()
         repo = site.restrictedTraverse('media-repository')

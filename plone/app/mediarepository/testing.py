@@ -10,16 +10,16 @@ from plone.dexterity.utils import createContent
 
 class PAMediaRepository(PloneSandboxLayer):
     defaultBases = (PLONE_FIXTURE,)
-    
+
     def setUpZope(self, app, configurationContext):
         # load ZCML
         import plone.app.mediarepository
         xmlconfig.file('configure.zcml', plone.app.mediarepository, context=configurationContext)
-    
+
     def setUpPloneSite(self, portal):
         # install into the Plone site
         applyProfile(portal, 'plone.app.mediarepository:default')
-        
+
         # add a manager user
         portal['acl_users'].userFolderAddUser('admin',
                                               'secret',
