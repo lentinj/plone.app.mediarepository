@@ -29,8 +29,8 @@
     margin: 0 auto;
 }
 
-.mediaRepository .mediaRepositoryEntry a, 
-.mediaRepository .mediaRepositoryEntry a:link {
+#content .mediaRepository .mediaRepositoryEntry a, 
+#content .mediaRepository .mediaRepositoryEntry a:link {
     display: block;
     text-decoration: none;
     font-size: 90%;
