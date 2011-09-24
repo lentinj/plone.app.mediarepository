@@ -3,6 +3,7 @@ from plone.app.mediarepository.testing import \
     MEDIAREPOSITORY_INTEGRATION_TESTING
 from plone.app.cmsui.interfaces import IQuickUploadCapable
 
+
 class MediaRepositoryTest(unittest.TestCase):
 
     layer = MEDIAREPOSITORY_INTEGRATION_TESTING
