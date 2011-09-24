@@ -1,19 +1,27 @@
-.mediaRepository {
+#content ul.mediaRepository {
+    margin: 0px;
     overflow: hidden;
-}
-
-.mediaRepository .selected {
-    border: 1px solid #387FBE;
 }
 
 .mediaRepository .mediaRepositoryEntry {
     float: left;
-    position:relative;
+    list-style: none outside none;
     overflow: hidden;
+    border: 1px solid #EEE;
     width: 143px;
-    margin: 0em;
+    height: 185px;
+    margin: 0.7em;
     padding: 0px 6px 0px 9px;
     text-align: center;
+}
+.mediaRepository .mediaRepositoryEntry.selected {
+    border: 1px solid #387FBE;
+}
+
+.mediaRepository .mediaRepositoryEntryWrapper {
+    display: block;
+    width: 128px;
+    height: 128px;
 }
 
 .mediaRepository .mediaRepositoryEntry img {
@@ -21,21 +29,15 @@
     margin: 0 auto;
 }
 
-.mediaRepository .mediaRepositoryEntryWrapper {
-    width: 128px;
-    margin-bottom: 7px;
-}
-
-.mediaRepository .mediaRepositoryEntry a {
+.mediaRepository .mediaRepositoryEntry a, 
+.mediaRepository .mediaRepositoryEntry a:link {
     display: block;
     text-decoration: none;
     font-size: 90%;
     width: 130px;
     margin: 16px auto 0px;
+    border: none;
 }
 .mediaRepository .mediaRepositoryEntryTitle {
     color: #76797c;
-    display: block;
-    width: 128px;
-    height: 3.6em;
 }
